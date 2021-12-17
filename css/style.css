@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*::selection{
+    background-color: #9997ff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    background: linear-gradient(to right, #2ec6fd 0%, #332ffc 100%);
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    /* height: 200px; */
+    top: 0px;
+    transition: all 0.5s ease;
+}
+
+.nav ul{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+}
+
+.nav ul li{
+    list-style: none;
+    padding: 10px;
+    
+}
+
+.nav ul li:hover{
+    background: #2f58ff;
+    border-radius: 6px;
+    transition: 0.3s all ease-in;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.right{
+    width: 50%;
+    text-align: right;
+}
+
+#input{
+    padding: 7px;
+    background: transparent;
+    border: 1px solid white;
+    
+    transition: 0.3s all ease-in-out;
+}
+
+#input::placeholder{
+    color: white;
+}
+
+#search{
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-size: small;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#search:hover{
+    background: #7591ff;
+    border-radius: 7px;
+    border: 1px solid #fff;
+}
+
+#input:focus{
+    border-radius: 11px;
+}
+
+
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.first-half{
+    width: 80%;
+}
+
+.first-half-box h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.first-half-box p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.read-more{
+    text-align: center;
+    align-self: center;
+    position: relative;
+    background: transparent;
+    border: none;
+    color: rgb(76, 0, 255);
+    cursor: pointer;    
+}
+
+.read-more:hover{
+    background: #7591ff;
+}
+
+.background{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.box{
+    margin: 3px;
+    border: 2px solid black;
+}
+
+.about{     
+    background: url(../img/img-2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.about .box-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin: 20px;
+}
+
+.first-half-about{
+    width: 80%;
+}
+
+.second-half-about{
+    width: 20%;
+}
+
+.second-half-about img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.text-big{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.text-small{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.p2{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.input-form select{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: rgb(175, 175, 175);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    
+}
+
+.input-form select:focus{
+    border-radius: 11px;
+    background: rgb(56, 133, 248);
+    color: white;
+}
+
+.input-form select option{
+    width: 70%;
+    background: rgb(56, 133, 248);
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    
+}
+
+.contact{
+    background: url(../img/img-3.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 70vh;
+}
+
+.contact h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif; 
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Style The form */
+.form{
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.input-form input{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* Set the background transparent */
+    background: transparent;
+    border: 1px solid white;
+}
+
+.input-form input:focus{
+    background: rgb(56, 133, 248);
+}
+
+.input-form input::placeholder{
+    color: rgb(175, 175, 175);
+}
+
+.input-form input:focus::placeholder{
+    color: #ffffff;
+}
+
+.terms{
+    margin: 20px;
+}
+
+.terms p{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.terms h2{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.terms ul{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}   
+.terms ul li{
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.terms h1{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.burger{
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 12px
+}
+
+@media screen and (max-width: 1050px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Align the right search bar to the center */
+    .right{
+        align-self: center;
+        margin: 0 24px;
+    }
+
+    .h-nav{
+        height: 70px;
+    }
+
+    .v-nav{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .box-main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin: 20px;
+    }
+
+    .second-half-about{
+        width: 80%;
+    }
+}
+
+
+
+.burger i{
+    font-size: 30px;
+    border-radius: 4px;
+    
+}
+
+.footer{
+    background: rgb(56, 133, 248);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
